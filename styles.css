@@ -208,7 +208,7 @@ h1, h2, h3 {
 
 .blog__cards {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .blog i {
@@ -219,6 +219,11 @@ h1, h2, h3 {
     border-radius: 5px;
     background-color: var(--white);
     min-width: calc(100% / 4);
+    margin-right: 20px;
+}
+
+.blog__card:last-of-type {
+    margin-right: 0;
 }
 
 .blog__card img {
