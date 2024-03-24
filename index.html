@@ -11,19 +11,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <title>Frontend Mentor | Easybank landing page</title>
 </head>
 <body>
 
   <nav class="container navbar">
-    Home
-    About
-    Contact
-    Blog
-    Careers
+    <div>
+      <img src="images/logo.svg" alt="Easybank logo">
+    </div>
+    
+    <input class="navbar-mobile__checkbox" type="checkbox" id="hamburger-toggler" aria-label="Toggle navigation">
 
-    <button class="request-btn" type="button">Request Invite</button>
+    <ul class="navbar__links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+    
+
+    <div class="navbar__buttons">
+      <label class="navbar-mobile__label"  for="hamburger-toggler"></label>
+      <button class="request-btn" type="button">Request Invite</button>
+    </div>
   </nav>
 
   <main class="container">
@@ -33,10 +48,9 @@
         <p>
           Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
         </p>
-        <a href="#" class="hero__btn">Request Invite</a>
+        <button class="request-btn" type="button">Request Invite</button>
       </div>
       <div class="hero__images">
-        <img src="images/bg-intro-desktop.svg" alt="" class="hero__images-bg">
         <img src="images/image-mockups.png" alt="" class="hero__images-mockup">
       </div>
     </section>
@@ -85,7 +99,9 @@
     
     <section class="blog">
       <h2>Latest Articles</h2>
+      <i id="left" class="fa-solid fa-arrow-left"></i>
       <div class="blog__cards">
+
         <article class="blog__card">
           <img src="images/image-currency.jpg" alt="Multiple banknotes from different countries">
           <div class="blog__card-text">
@@ -129,7 +145,9 @@
             </p>
           </div>
         </article>
+
       </div>
+      <i id="right" class="fa-solid fa-arrow-right"></i>
     </section>
   </main>
   
