@@ -444,8 +444,19 @@ footer {
         z-index: -1;
     }
 
+    .navbar__links li {
+        padding-top: 18px;
+    }
+    .navbar__links li:last-of-type {
+        padding-bottom: 18px;
+    }
+
     .navbar__links li a {
         color: var(--dark-blue);
+    }
+
+    .navbar__links li a:hover {
+        padding-bottom: 10px;
     }
 
     .navbar:has(.navbar-mobile__checkbox:checked) {
